@@ -4,15 +4,8 @@
     
     <h3> pH dilution Calculator for Hydroponics -</h3>
     <p> acid/base into water </p>
-    
-    <script>
-    
-      
-    
-    </script>
-    
-    <form method="post" action="<?php echo $_SERVER['pH_Calculator.php'];?>">
-    
+   
+        
       
       	<h3> 1st Solution </h3>
       <p>
@@ -44,17 +37,23 @@
         <input type="submit" value="submit">
       </p>
       
-      <?php
-      if ($_SERVER['pH_Calculator.php'] == "POST") {
-        // collect value of input field
-        $1V2 = $_REQUEST['1V2'];
-        if (empty($1V2)) {
-          echo "Name is empty";
-        } else {
-          echo $name;
+      <b> Total: </b>
+      <p id='total'> </p>
+      
+      <script>
+    
+        calculator = function (){
+          
+          var FirstInput = getElementById('1V2').value;
+          var SecondInput = getElementById('2C2').value;
+          var ThirdInput = getElementById('2V2').value;
+
+          document.getElementById('total') = math.pow(parseInt('ThirdInput'),(parseInt('SecondInput') * -1)) * ((0.02630267992 * 1000 / parseInt(FirstInput));w
         }
-      }
-      ?>
+      
+    
+      </script>
+
     
     </form>
     
