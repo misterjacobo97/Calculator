@@ -11,7 +11,7 @@
     
     </script>
     
-    <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+    <form method="post" action="<?php echo $_SERVER['pH_Calculator.php'];?>">
     
       
       	<h3> 1st Solution </h3>
@@ -45,7 +45,7 @@
       </p>
       
       <?php
-      if ($_SERVER["REQUEST_METHOD"] == "POST") {
+      if ($_SERVER['pH_Calculator.php'] == "POST") {
         // collect value of input field
         $1V2 = $_REQUEST['1V2'];
         if (empty($1V2)) {
